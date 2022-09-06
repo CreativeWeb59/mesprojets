@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ennemy types with JavaScript sub classing</title>
+</head>
+
+<body>
+    <section id="game" class="game">
+        <button id="rules-btn" class="rules-game">Règles du jeu</button>
+        <button id="raz-btn" class="rules-game">Recommencer</button>
+        <div id="ecran-start" class="ecran-start">
+            <h2>Dépose ton colis !!!</h2>
+            <h3>Meilleurs scores :</h3>
+            <div id="contain-score">
+
+            </div>
+            <div>
+                <label for="pseudo">Pseudo : </label>
+                <input type="text" id="pseudo">
+            </div>
+            <button id="jouer-btn" class="close-rules">Jouer</button>
+
+        </div>
+
+        <div id="rules" class="rules">
+            <h2>Règles du jeu</h2>
+            <p>
+                Déplacez votre personnage pour qu'il emmene les colis à la gare. Si le train s'arrete, vous gagnez 100
+                points, sinon, vous gagnez 10 points. <br>
+                Vous pouvez vous déplacer avec les touches "haut" et "bas". <br>
+                Les croix déterminent le lieu de votre futur déplacement.<br>
+                Evitez les voitures, sinon aie !!!
+            </p>
+            <button id="close-btn" class="close-rules">Quitter</button>
+        </div>
+
+        <!-- <div class="sound-container"> -->
+        <!-- Image sur le cote droit -->
+        <!-- <img src="img/sound.png" alt="" id="sound">
+        </div> -->
+
+        <div id="game-over" class="rules">
+            <img src="img/Game_Over_logo.png" alt="" id="you-lose">
+            <p id="leScore"></p>
+            <button id="restart" class="close-rules">Rejouer
+        </div>
+        </div>
+
+        <canvas id="canvas1"></canvas>
+
+        <img id="carLeft" class="notdisplay" src="img/spriteG.png">
+        <img id="carRight" class="notdisplay" src="img/spriteD.png">
+        <img id="monTrain" class="notdisplay" src="img/train.png">
+        <img id="monPlayer" class="notdisplay" src="img/player1_sprite.png">
+        <img id="monColis" class="notdisplay" src="img/colis.png">
+        <img id="fondsImmeuble" class="notdisplay" src="./img/fonds_immeubles.jpg">
+        <script src="script.js"></script>
+    </section>
+
+</body>
+
+</html>
