@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+h1 {
+    font-family: 'Playball', cursive;
+}
+
+h2 {
+    font-family: 'Playball', cursive;
+    /*    font-family: 'Pattaya', sans-serif;*/
+}
+
+a {
+    font-family: 'Playball', cursive;
+}
+
+button {
+    font-family: 'Playball', cursive;
+}
+
+.police {
+    font-family: 'Playball', cursive;
+}

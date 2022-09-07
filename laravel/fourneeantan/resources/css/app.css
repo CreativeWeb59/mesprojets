@@ -1,0 +1,122 @@
+/* ./resources/css/app.css */
+:root {
+    --color-primary: #FFD5AF;
+    --color-fonce: #100C0D;
+    --color-primaryClear:amber-50;
+    --color-secondary: #E59A59;
+    --color-third: #888870;
+    --color-four: #712E1E;
+    --color-dark: #100C0D;
+    /*--color-primary: #FFD5AF;*/
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.form {
+    @apply w-full max-w-sm mx-auto rounded-lg border shadow-md p-5 mb-5
+}
+
+.label {
+    @apply block font-semibold text-gray-700 mb-2
+}
+
+.input {
+    @apply shadow border rounded w-full p-2
+}
+
+.textarea {
+    @apply shadow border rounded resize-none;
+}
+
+.btn {
+    @apply bg-four text-white transition ease-in-out duration-500 rounded-md shadow-md block px-4 py-2 mt-3 text-2xl
+}
+
+.btn:hover {
+    @apply bg-white
+    text-four
+    border
+}
+
+.btnInL {
+    @apply bg-secondary text-four transition ease-in-out duration-500 rounded-md shadow-md px-4 py-2 mt-3
+}
+
+.btnInL:hover {
+    @apply bg-four
+    text-white
+}
+
+.btnAdmin {
+    @apply bg-gray-800 text-white text-center transition ease-in-out duration-500 rounded-md shadow-md block px-4 py-2 mt-3 text-2xl
+}
+
+.btnAdmin:hover {
+    @apply bg-gray-400
+    text-black
+    border
+}
+
+.btnCAdmin {
+    @apply  bg-gray-800 text-white transition ease-in-out duration-500 rounded-md shadow-md block text-base lg:text-lg h-8 text-center lg:inline
+}
+
+.btnCAdmin:hover {
+    @apply bg-gray-400
+    text-black
+    border
+}
+
+.link {
+    @apply text-four
+}
+
+.link:hover {
+    @apply text-secondary
+}
+
+/* Liens sur fond marron */
+.link1 {
+    @apply text-white
+}
+
+.link1:hover {
+    @apply text-secondary
+}
+
+.h1{
+    @apply text-3xl text-four m-5
+    lg:text-5xl
+
+}
+
+.h2{
+    @apply text-2xl text-four mb-3 font-bold
+}
+
+.h3{
+    @apply text-3xl
+}
+
+.alltexts{
+    @apply text-black
+}
+
+.svgLink:hover{
+    @apply cursor-pointer;
+}
+
+
+/* Page accueil */
+
+.btnAccueil{
+    @apply border-4 border-four rounded-full p-3 h-24 w-24 bg-white
+}
+
+.btnAccueil:hover{
+    @apply p-3 h-28 w-28
+}
